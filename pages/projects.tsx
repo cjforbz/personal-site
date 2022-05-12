@@ -7,7 +7,7 @@ const Projects = () => {
         {projects.map((project, idx) => {
           return (
             <div
-              className={idx % 2 === 1 ? 'project-even' : 'project-odd'}
+              className={idx % 2 === 0 ? 'project-even' : 'project-odd'}
               key={idx}
             >
               <h2>{project.name}</h2>
