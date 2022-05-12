@@ -6,7 +6,6 @@
 
 body {
   background-color: #323232;
-  color: #ca3e47;
   font-family: sans-serif;
   color: rgba(255, 255, 240, 0.9);
 }
@@ -19,7 +18,7 @@ a:visited {
 
 #navbar-links a {
   text-decoration: none;
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-size: large;
 }
 
@@ -33,13 +32,49 @@ a:visited {
   padding-bottom: 0.7rem;
   padding-top: 0.7rem;
   background-color: #212121;
-  border: 0.1rem solid;
+  border: 0.1rem solid rgba(255, 255, 240, 0.9);
   margin-right: 0.1rem;
-  margin-bottom: 0.5rem;
-  border-color: rgba(255, 255, 240, 0.9);
-  border-radius: 0.5rem;
 }
 
+/* Homepage styles */
+#home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 0.1rem solid rgba(255, 255, 240, 0.9);
+  border-radius: 1rem;
+  background-color: #212121;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 5rem;
+  margin-top: 6rem;
+}
+
+#home-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  flex: 1 1 0rem;
+}
+
+#portrait {
+  display: flex;
+  justify-content: center;
+  max-width: 20rem;
+  max-height: 20rem;
+  flex: 1 1 0rem;
+}
+
+#portrait img {
+  max-width: 90%;
+  max-height: 90%;
+  min-width: 25%;
+  min-height: 25%;
+  margin-right: 1rem;
+}
 /*project page styles*/
 
 #projects {
