@@ -6,12 +6,17 @@ const Projects = () => {
       <div id="projects">
         {projects.map((project, idx) => {
           return (
-            <div className="project" key={idx}>
-              <h3>{project.name}</h3>
+            <div
+              className={idx % 2 === 1 ? 'project-even' : 'project-odd'}
+              key={idx}
+            >
+              <h2>{project.name}</h2>
               <img src={project.imgSrc} alt="" />
               <p>{project.description}</p>
-              <a href={project.github}>Github</a>
-              <a href={project.deployment}>Deployment</a>
+              <div className="project-links">
+                <a href={project.github}>Github</a>
+                <a href={project.deployment}>Deployment</a>
+              </div>
             </div>
           );
         })}
