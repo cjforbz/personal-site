@@ -7,7 +7,7 @@ export const knowledge: Skill[] = [
   {
     name: 'JavaScript',
     imgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
   {
     name: 'HTML 5',
@@ -53,5 +53,23 @@ export const knowledge: Skill[] = [
     name: 'Git',
     imgUrl:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+  },
+];
+
+export const learning: Skill[] = [
+  {
+    name: 'TypeScript',
+    imgUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg',
+  },
+  {
+    name: 'SQL',
+    imgUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+  },
+  {
+    name: 'Next.js',
+    imgUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
   },
 ];

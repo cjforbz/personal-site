@@ -1,4 +1,4 @@
-import { knowledge } from '../public/skills';
+import { knowledge, learning } from '../public/skills';
 
 const About = () => {
   return (
@@ -34,7 +34,18 @@ const About = () => {
         })}
       </div>
       <h1>What I'm Learning</h1>
-      <div id="learning"></div>
+      <div id="learning">
+        {learning.map((skill) => {
+          return (
+            <div className="skill">
+              <div className="skill-img" id={skill.name}>
+                <img src={skill.imgUrl} />
+              </div>
+              <h5>{skill.name}</h5>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
