@@ -72,4 +72,9 @@ export const learning: Skill[] = [
     imgUrl:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
   },
+  {
+    name: 'GraphQL',
+    imgUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
+  },
 ];
