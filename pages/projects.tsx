@@ -1,9 +1,9 @@
 import projects from '../public/projects';
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <h1>Projects</h1>
-      <div id="projects">
+      <div id="projects-container">
         {projects.map((project, idx) => {
           return (
             <div
