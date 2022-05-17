@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Hamburger from './Hamburger';
 const Navbar = () => {
   return (
     <nav id="navbar">
@@ -8,6 +9,7 @@ const Navbar = () => {
         <Link href="/projects">Projects</Link>
         <Link href="/contact">Contact</Link>
       </div>
+      <Hamburger />
     </nav>
   );
 };
