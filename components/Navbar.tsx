@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Hamburger from './Hamburger';
+import styles from './Navbar.module.css';
 const Navbar = () => {
   return (
     <nav id="navbar">

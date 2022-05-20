@@ -6,11 +6,12 @@ const About = () => {
       <h1>I'm Colin, and I build sleek, responsive, full-stack web apps</h1>
       <div id="about-me">
         <p>
-          Full-stack development allows me to indulge my creative side while
-          also giving my brain a workout and letting me solve real-world
-          problems. I'm interested in the journey that data takes, from the
-          frontend to the backed, and to all points in-between. As a lifelong
-          learner, I'm constantly trying to hone my skills and pick up new ones.
+          I love full-stack development because it allows me to indulge my
+          creative side while also giving my brain a workout and letting me
+          solve real-world problems. I'm interested in the journey that data
+          takes, from the frontend to the backed, and to all points in-between.
+          As a lifelong learner, I'm constantly trying to hone my skills and
+          pick up new ones.
         </p>
 
         <p>
