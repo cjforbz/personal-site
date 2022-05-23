@@ -5,7 +5,7 @@ const HomePage = () => {
         <h1>Colin Forbes</h1>
         <h3>Full-Stack Software Developer</h3>
         <div id="socials-home">
-          <div className="socials-home-icon">
+          <div className="socials-home-icon" id="linked-in-home">
             <a href="https://www.linkedin.com/in/colin-j-forbes/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"

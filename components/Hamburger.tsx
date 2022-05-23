@@ -1,8 +1,18 @@
 import Link from 'next/link';
-const Hamburger = () => {
+import { useEffect, useState } from 'react';
+const Hamburger = ({ checked, setChecked }) => {
+  const closeMenu = (e) => {
+    if (checked) setChecked(false);
+    console.log('clicked');
+  };
   return (
     <div>
-      <input type="checkbox" id="hamburger-input" className="burger-shower" />
+      <input
+        type="checkbox"
+        checked={checked}
+        id="hamburger-input"
+        onChange={(e) => setChecked(e.target.checked)}
+      />
       <label htmlFor="hamburger-input">
         <div id="hamburger-menu">
           <span></span>
@@ -12,23 +22,27 @@ const Hamburger = () => {
       </label>
       <nav id="sidebar-menu">
         <ul>
-          <li>
+          <li onClick={closeMenu}>
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li onClick={closeMenu}>
             <Link href="/about">About</Link>
           </li>
-          <li>
+          <li onClick={closeMenu}>
             <Link href="/projects">Projects</Link>
           </li>
-          <li>
+          <li onClick={closeMenu}>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
-      <div className="overlay">
-        {/* <input type="checkbox" className="burger-shower" /> */}
-      </div>
+      <div
+        className="overlay"
+        onClick={(e) => {
+          e.preventDefault;
+          if (checked) setChecked(false);
+        }}
+      ></div>
     </div>
   );
 };

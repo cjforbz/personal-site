@@ -6,7 +6,7 @@ const Contact = () => {
       <h1>Get In Touch</h1>
       <div id="contact-info">
         <div className="social-link">
-          <div className="socials-home-icon">
+          <div className="socials-home-icon" id="linked-in-contact">
             <a href="https://www.linkedin.com/in/colin-j-forbes/">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"

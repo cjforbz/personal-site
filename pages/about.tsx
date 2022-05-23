@@ -23,9 +23,9 @@ const About = () => {
       </div>
       <h1>What I Know</h1>
       <div id="knowledge">
-        {knowledge.map((skill) => {
+        {knowledge.map((skill, idx) => {
           return (
-            <div className="skill">
+            <div className="skill" key={idx}>
               <div className="skill-img">
                 <img src={skill.imgUrl} />
               </div>
